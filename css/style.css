@@ -1,0 +1,55 @@
+.offlineBody {
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	z-index: 1;
+	display: block;
+	background-image: url('../image/cover.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 100%;
+	-webkit-filter: blur(2px);
+	-moz-filter: blur(2px);
+	-o-filter: blur(2px);
+	-ms-filter: blur(2px);
+	filter: blur(2px);
+}
+
+.offlineContent {
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 30%;
+	z-index: 1000;
+	margin: auto;
+	color: #fff;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.loginBody {
+	background-size: cover;
+	background-image: url("../image/cover.jpg");
+	background-repeat: no-repeat;
+	height: 100%;
+}
+
+#loginForm{
+	margin: auto !important;
+	top: 10%;
+}
+
+#signUpForm{
+	margin: auto !important;
+	top: 5%;
+}
+
+.loginBody h1 {
+	color: #fff;
+}
+
+

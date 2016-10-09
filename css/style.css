@@ -52,4 +52,79 @@
 	color: #fff;
 }
 
+#lb {
+	display: none;
+	color: #000;
+}
 
+#ts {
+	display: none;
+	color: #000;
+}
+
+#ti {
+	display: none;
+	color: #000;
+}
+
+#rp {
+	display: none;
+	color: #000;
+}
+@media only screen and (max-width: 992px) {
+    /* For tablets: */
+    .myContainer {
+    	margin-right: 0px;
+    }
+    
+}
+@media only screen and (min-width: 992px) {
+    /* For desktop: */
+    .myContainer {
+    	margin-right: 291px;
+    }
+}
+
+.marquee {
+  height: 25px;
+  width: 100%;
+  color: #fff;
+  overflow: hidden;
+  position: relative;
+}
+
+.marquee div {
+  display: block;
+  width: 200%;
+  height: 30px;
+
+  position: absolute;
+  overflow: hidden;
+
+  animation: marquee 15s linear infinite;
+}
+
+.marquee span {
+  float: left;
+  width: 50%;
+}
+
+@keyframes marquee {
+  0% { left: 0; }
+  100% { left: -100%; }
+}
+
+ body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+}
+
+.collapsible {
+	color: #000 !important;
+}

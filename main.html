@@ -5,35 +5,238 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="Wallstreet login">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-	<link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.indigo-pink.min.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<title>WallStree | Main</title>
+	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+  	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>WallStreet | Main</title>
 </head>
 <body>
-	<div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer
-            mdl-layout--fixed-header">
-  <header class="mdl-layout__header">
-    <div class="mdl-layout__header-row">
-      <div class="mdl-layout__header-row">
-        <div class="mdl-layout-spacer"></div>
-      <span class="mdl-layout-title">Wallstreet</span>
-    </div>
-  </header>
-  <div class="mdl-layout__drawer">
-    <span class="mdl-layout-title">Title</span>
-    <nav class="mdl-navigation">
-      <a class="mdl-navigation__link" href="">Link</a>
-      <a class="mdl-navigation__link" href="">Link</a>
-      <a class="mdl-navigation__link" href="">Link</a>
-      <a class="mdl-navigation__link" href="">Link</a>
-    </nav>
-  </div>
-  <main class="mdl-layout__content">
-    <div class="page-content"><!-- Your content goes here --></div>
-  </main>
-</div>
-<script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>	
-<script   src="http://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>  
+	<nav>
+	<div class="nav-wrapper">
+      <a href="#" class="brand-logo center">WallStreet</a>
+	<ul class="hide-on-med-and-down">
+	    <li><a href="#!">TT logo</a></li>
+  	</ul>
+  <ul id="slide-out" class="side-nav fixed">
+      <li class="bold"><a href="#!" class="waves-effect waves-teal center">Welcome User</a></li>
+      <a class="waves-effect waves-light modal-trigger" href="#rules">Help</a>
+      <ul class="collapsible black-text" data-collapsible="accordion">
+	    <li>
+	      <div class="collapsible-header">Leaderboard</div>
+	      <div class="collapsible-body">
+	      	 <ul class="collection">
+			      <li class="collection-item center">Alvin</li>
+			      <li class="collection-item center">Alvin</li>
+			      <li class="collection-item center">Alvin</li>
+			      <li class="collection-item center">Alvin</li>
+		     </ul>
+	      </div>
+	    </li>
+	    <li>
+	      <div class="collapsible-header">Relative Position</div>
+	      <div class="collapsible-body">
+	      	 <ul class="collection">
+		      <li class="collection-item center">Alvin</li>
+		      <li class="collection-item center">Alvin</li>
+		      <li class="collection-item center">Alvin</li>
+		      <li class="collection-item center">Alvin</li>
+		    </ul>
+	      </div>
+	    </li>
+	    <li>
+	      <div class="collapsible-header">Top Stocks</div>
+	      <div class="collapsible-body">
+	      	<ul class="collection">
+		      <li class="collection-item center">Alvin</li>
+		      <li class="collection-item center">Alvin</li>
+		      <li class="collection-item center">Alvin</li>
+		      <li class="collection-item center">Alvin</li>
+		    </ul>
+	      </div>
+	    </li>
+	    <li>
+	      <div class="collapsible-header">Top Investors</div>
+	      <div class="collapsible-body">
+	      	<ul class="collection">
+		      <li class="collection-item center">Alvin</li>
+		      <li class="collection-item center">Alvin</li>
+		      <li class="collection-item center">Alvin</li>
+		      <li class="collection-item center">Alvin</li>
+		    </ul>
+	      </div>
+	    </li>
+	  </ul>
+</ul>
+  	<a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+	</nav>
+	<main>
+		<div class="myContainer">
+		<div class="row">
+			<p><b>Liquid Cash: </b></p>
+		</div>
+		<div class="row">
+			<p><b>Value: </b></p>
+		</div>
+		<div class="row">
+	    <div class="col s12">
+	      <ul class="tabs">
+	        <li class="tab col s4"><a  class="active" href="#stocks">All Stocks</a></li>
+	        <li class="tab col s4"><a href="#investors">All Investors</a></li>
+         	<li class="tab col s4"><a href="#transactions">Your Transactions</a></li>
+	      </ul>
+	    </div>
+		    <div id="stocks" class="col s12">
+		    	<table class="bordered striped centered responsive-table">
+		        <thead>
+		          <tr>
+		              <th data-field="name">Name</th>
+		              <th data-field="value">Value</th>
+		              <th data-field="trend">Trend</th>
+		              <th data-filed="action"></th>
+		          </tr>
+		        </thead>
+		        <tbody>
+		          <tr>
+		            <td>Alvin</td>
+		            <td>$0.87</td>
+		            <td><i class="material-icons">keyboard_arrow_up</i></td>
+		            <td> <a class="btn-floating btn-small waves-effect waves-light"><i class="material-icons">add</i></a></td>
+		          </tr>
+		           <tr>
+		            <td>Alvin</td>
+		            <td>$0.87</td>
+		            <td><i class="material-icons">keyboard_arrow_down</i></td>
+		            <td> <a class="btn-floating btn-small waves-effect waves-light"><i class="material-icons">add</i></a></td>
+		          </tr>
+		           <tr>
+		            <td>Alvin</td>
+		            <td>$0.87</td>
+		            <td><i class="material-icons">keyboard_arrow_down</i></td>
+		            <td> <a class="btn-floating btn-small waves-effect waves-light"><i class="material-icons">add</i></a></td>
+		          </tr>
+		           <tr>
+		            <td>Alvin</td>
+		            <td>$0.87</td>
+		            <td><i class="material-icons">keyboard_arrow_up</i></td>
+		            <td> <a class="btn-floating btn-small waves-effect waves-light"><i class="material-icons">add</i></a></td>
+		          </tr>
+		           <tr>
+		            <td>Alvin</td>
+		            <td>$0.87</td>
+		            <td><i class="material-icons">keyboard_arrow_down</i></td>
+		            <td> <a class="btn-floating btn-small waves-effect waves-light"><i class="material-icons">add</i></a></td>
+		          </tr>
+		        </tbody>
+		      </table>
+		    </div>
+		    <div id="investors" class="col s12">
+		    	<table class="bordered striped centered responsive-table">
+		        <thead>
+		          <tr>
+		              <th data-field="name">Name</th>
+		              <th data-field="value">Value</th>
+		              <th data-filed="action"></th>
+		          </tr>
+		        </thead>
+		        <tbody>
+		          <tr>
+		            <td>Alvin</td>
+		            <td>$0.87</td>
+		            <td>
+				      <input type="number" name="amount" placeholder="Amount" style="width:50%">
+				      <a class="btn-floating btn-small waves-effect waves-light"><i class="material-icons">add</i></a>
+		            </td>
+		          </tr>
+		           <tr>
+		            <td>Alvin</td>
+		            <td>$0.87</td>
+		            <td>
+				      <input type="number" name="amount" placeholder="Amount" style="width:50%">
+				      <a class="btn-floating btn-small waves-effect waves-light"><i class="material-icons">add</i></a>
+		            </td>
+		          </tr>
+		           <tr>
+		            <td>Alvin</td>
+		            <td>$0.87</td>
+		            <td>
+				      <input type="number" name="amount" placeholder="Amount" style="width:50%">
+				      <a class="btn-floating btn-small waves-effect waves-light"><i class="material-icons">add</i></a>
+		            </td>
+		          </tr>
+		        </tbody>
+		      </table>
+		    </div>
+		    <div id="transactions" class="col s12">
+		    	<table class="bordered striped centered responsive-table">
+		        <thead>
+		          <tr>
+		              <th data-field="name">Name</th>
+		              <th data-field="value">Value</th>
+		              <th data-field="quantity">Quantity</th>
+		              <th data-field="action"></th>
+		              <th data-field="name">Name</th>
+		              <th data-field="value">Value</th>
+		          </tr>
+		        </thead>
+		        <tbody>
+		          <tr>
+		            <td>Alvin</td>
+		            <td>$0.87</td>
+		            <td>20</td>
+		            <td>
+				      <input type="number" name="amount" placeholder="Amount" style="width:50%">
+				      <a class="btn-floating btn-small waves-effect waves-light"><i class="material-icons">add</i></a>
+		            </td>
+		             <td>Alvin</td>
+		            <td>$0.87</td>
+		          </tr>
+		           <tr>
+		            <td>Alvin</td>
+		            <td>$0.87</td>
+		            <td>20</td>
+		            <td>
+				      <input type="number" name="amount" placeholder="Amount" style="width:50%">
+				      <a class="btn-floating btn-small waves-effect waves-light"><i class="material-icons">add</i></a>
+		            </td>
+		             <td>Alvin</td>
+		            <td>$0.87</td>
+		          </tr>
+		           <tr>
+		            <td>Alvin</td>
+		            <td>$0.87</td>
+		            <td>20</td>
+		            <td>
+				      <input type="number" name="amount" placeholder="Amount" style="width:50%">
+				      <a class="btn-floating btn-small waves-effect waves-light"><i class="material-icons">add</i></a>
+		            </td>
+		             <td>Alvin</td>
+		            <td>$0.87</td>
+		          </tr>
+		        </tbody>
+		      </table>
+		    </div>
+		  </div>
+		  </div>
+	  </main>
+	 <div id="rules" class="modal">
+	    <div class="modal-content">
+	      <h4>Rules</h4>
+	      <p>Copy paste rules here</p>
+	    </div>
+	    <div class="modal-footer">
+	      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Continue</a>
+	    </div>
+	  </div>
+	   <footer class="page-footer">
+		  <div class="marquee">
+			  <div>
+			    <span>You spin me right round, baby. Like a record, baby.</span>
+			    <span>You spin me right round, baby. Like a record, baby.</span>
+			  </div>
+		</div>
+	</footer>
+	  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>

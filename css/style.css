@@ -1,3 +1,7 @@
+@import 'https://fonts.googleapis.com/css?family=Droid+Sans';
+@import 'https://fonts.googleapis.com/css?family=Signika';
+
+
 .offlineBody {
 	position: fixed;
 	left: 0;
@@ -36,6 +40,11 @@
 	background-image: url("../image/cover.jpg");
 	background-repeat: no-repeat;
 	height: 100%;
+	font-family: 'Droid Sans', sans-serif;
+}
+
+.loginBody h1 {
+	font-family: 'Signika', sans-serif;
 }
 
 #loginForm{
@@ -52,25 +61,11 @@
 	color: #fff;
 }
 
-#lb {
-	display: none;
-	color: #000;
+.brand-logo {
+	font-family: 'Signika', sans-serif;
+
 }
 
-#ts {
-	display: none;
-	color: #000;
-}
-
-#ti {
-	display: none;
-	color: #000;
-}
-
-#rp {
-	display: none;
-	color: #000;
-}
 @media only screen and (max-width: 992px) {
     /* For tablets: */
     .myContainer {
@@ -114,16 +109,16 @@
   100% { left: -100%; }
 }
 
- body {
+ .mainbody {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
+    font-family: 'Droid Sans', sans-serif;
   }
 
   main {
     flex: 1 0 auto;
   }
-}
 
 .collapsible {
 	color: #000 !important;
